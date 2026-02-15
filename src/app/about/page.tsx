@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
-  title: "About | BambooParts",
-  description: "Learn about our mission to provide premium bamboo flute parts and materials.",
+  title: "About | MehruKa✨",
+  description: "Learn about our mission to provide premium handcrafted bamboo products.",
 };
 
 export default function AboutPage() {
@@ -12,29 +13,21 @@ export default function AboutPage() {
       <div className="text-center">
         <h1 className="font-serif text-4xl font-bold text-bamboo-800">Our Story</h1>
         <p className="mt-4 text-lg text-bamboo-600">
-          Connecting makers with the finest bamboo flute materials since 2020
+          Bringing sustainable bamboo products to everyday life since 2020
         </p>
       </div>
 
-      {/* Bamboo illustration */}
+      {/* Product showcase */}
       <div className="mt-12 flex justify-center">
         <div className="w-full max-w-md rounded-lg bg-bamboo-100 p-8">
-          <svg viewBox="0 0 300 120" className="h-auto w-full text-bamboo-400" fill="none" stroke="currentColor" strokeWidth="1.5">
-            {/* Flute shape */}
-            <rect x="20" y="45" width="260" height="30" rx="15" strokeWidth="2" />
-            {/* Finger holes */}
-            <circle cx="100" cy="60" r="5" />
-            <circle cx="130" cy="60" r="5" />
-            <circle cx="160" cy="60" r="5" />
-            <circle cx="190" cy="60" r="5" />
-            <circle cx="220" cy="60" r="5" />
-            <circle cx="250" cy="60" r="5" />
-            {/* Mouthpiece */}
-            <ellipse cx="45" cy="60" rx="8" ry="4" />
-            {/* Node lines */}
-            <line x1="80" y1="45" x2="80" y2="75" strokeWidth="1" opacity="0.5" />
-            <line x1="170" y1="45" x2="170" y2="75" strokeWidth="1" opacity="0.5" />
-          </svg>
+          <div className="relative mx-auto h-48 w-full">
+            <Image
+              src="/images/products/p1.png"
+              alt="MehruKa Bamboo Thermos"
+              fill
+              className="object-contain"
+            />
+          </div>
         </div>
       </div>
 
@@ -43,33 +36,33 @@ export default function AboutPage() {
         <section>
           <h2 className="font-serif text-2xl font-bold text-bamboo-800">The Beginning</h2>
           <p className="mt-4 leading-relaxed text-bamboo-600">
-            BambooParts was born from a simple frustration: finding quality bamboo flute
-            parts shouldn&apos;t be this hard. As makers ourselves, we spent years searching
-            for reliable sources of properly cured bamboo tubes, precision-fitted mouthpieces,
-            and quality hardware. When we couldn&apos;t find a one-stop shop, we decided to
-            build one.
+            MehruKa was born from a passion for sustainability and beautiful design.
+            We believed that everyday products shouldn&apos;t come at the cost of the
+            environment. When we discovered the incredible versatility of bamboo &mdash;
+            strong, lightweight, naturally beautiful, and endlessly renewable &mdash; we
+            knew we had found our calling.
           </p>
         </section>
 
         <section>
           <h2 className="font-serif text-2xl font-bold text-bamboo-800">Our Materials</h2>
           <p className="mt-4 leading-relaxed text-bamboo-600">
-            We source our bamboo from sustainable groves in Japan (Madake), China (Tonkin),
-            and Southeast Asia. Each piece is carefully selected for its acoustic properties
-            &mdash; wall thickness, density, and natural straightness. Our bamboo is heat-treated
-            and seasoned for a minimum of six months before we offer it for sale, ensuring
-            dimensional stability and rich tonal qualities.
+            We source our bamboo from sustainable groves in Asia, where bamboo grows
+            rapidly without the need for pesticides or excessive water. Each piece is
+            carefully selected for its quality, grain pattern, and structural integrity.
+            Our bamboo is properly cured and treated to ensure durability and a beautiful
+            natural finish that lasts for years.
           </p>
         </section>
 
         <section>
           <h2 className="font-serif text-2xl font-bold text-bamboo-800">The Craft</h2>
           <p className="mt-4 leading-relaxed text-bamboo-600">
-            Bamboo flute making is an ancient art that spans cultures across the globe &mdash;
-            from the Japanese shakuhachi to the Indian bansuri, the Native American flute to
-            the simple folk recorder. Each tradition brings its own techniques, aesthetics,
-            and musical expression. We provide parts that honor these traditions while making
-            the craft accessible to modern makers.
+            Every MehruKa product is handcrafted by skilled artisans who bring generations
+            of bamboo-working knowledge to their craft. From the precision carving of our
+            decorative bottles to the careful assembly of our insulated thermos flasks, each
+            piece receives individual attention. The result is a product that&apos;s not just
+            functional, but a work of art.
           </p>
         </section>
 
@@ -79,15 +72,15 @@ export default function AboutPage() {
             {[
               {
                 title: "Quality First",
-                desc: "Every part is inspected and tested before shipping. We stand behind everything we sell.",
+                desc: "Every product is inspected and tested before shipping. We stand behind everything we sell.",
               },
               {
                 title: "Sustainably Sourced",
                 desc: "Our bamboo comes from managed groves that practice responsible harvesting techniques.",
               },
               {
-                title: "Maker Support",
-                desc: "We provide guides, specifications, and personal support to help you succeed in your builds.",
+                title: "Customer Support",
+                desc: "We provide prompt, personal support to ensure your complete satisfaction with every purchase.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-lg border border-bamboo-200 bg-white p-5">
@@ -102,13 +95,13 @@ export default function AboutPage() {
       {/* CTA */}
       <div className="mt-16 text-center">
         <p className="text-lg text-bamboo-600">
-          Ready to start building?
+          Ready to go sustainable?
         </p>
         <Link
           href="/products"
           className="mt-4 inline-block rounded-md bg-forest-500 px-8 py-3 font-medium text-white transition-colors hover:bg-forest-600"
         >
-          Shop All Parts
+          Shop Products
         </Link>
       </div>
     </div>

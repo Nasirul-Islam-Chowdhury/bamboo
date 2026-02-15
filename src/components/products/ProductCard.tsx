@@ -54,7 +54,7 @@ export default function ProductCard({ product }: { product: Product }) {
         </svg>
       </button>
 
-      <div className="aspect-square overflow-hidden bg-bamboo-100">
+      <div className="aspect-square overflow-hidden bg-bamboo-50">
         <ProductImage
           src={product.image}
           alt={product.name}

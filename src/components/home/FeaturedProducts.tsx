@@ -8,12 +8,12 @@ export default function FeaturedProducts() {
     <section className="bg-white py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <h2 className="text-center font-serif text-3xl font-bold text-bamboo-800">
-          Popular Parts
+          Our Products
         </h2>
         <p className="mt-2 text-center text-bamboo-600">
-          Our most loved bamboo flute components
+          Handcrafted bamboo bottles, sustainably made
         </p>
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2">
           {featured.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

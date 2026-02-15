@@ -60,21 +60,12 @@ function RegisterForm() {
       <div className="w-full max-w-sm rounded-lg border border-bamboo-200 bg-white p-8">
         {/* Logo */}
         <div className="text-center">
-          <svg
-            className="mx-auto h-12 w-12 text-forest-500"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path d="M4 20 C4 20, 8 12, 8 4 M8 4 C8 4, 12 12, 12 20 M8 8 L6 10 M8 12 L10 14" />
-            <path d="M12 20 C12 20, 16 12, 16 4 M16 4 C16 4, 20 12, 20 20 M16 8 L14 10 M16 12 L18 14" />
-          </svg>
+          <h2 className="font-serif text-3xl font-bold text-bamboo-800">MehruKa✨</h2>
           <h1 className="mt-4 font-serif text-2xl font-bold text-bamboo-800">
             Create Account
           </h1>
           <p className="mt-1 text-sm text-bamboo-600">
-            Join BambooParts to track your orders
+            Join MehruKa to track your orders
           </p>
         </div>
 

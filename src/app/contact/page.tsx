@@ -104,7 +104,7 @@ export default function ContactPage() {
                   />
                 ),
                 label: "Email",
-                value: "hello@bambooparts.com",
+                value: "hello@mehruka.com",
               },
               {
                 icon: (
@@ -115,7 +115,7 @@ export default function ContactPage() {
                   />
                 ),
                 label: "Location",
-                value: "Portland, Oregon",
+                value: "Sylhet, Bangladesh",
               },
               {
                 icon: (
@@ -154,8 +154,8 @@ export default function ContactPage() {
             <h3 className="font-semibold text-bamboo-800">Frequently Asked</h3>
             <ul className="mt-3 space-y-2 text-sm text-bamboo-600">
               <li>- Do you ship internationally? <span className="italic">Yes, worldwide.</span></li>
-              <li>- Can I return parts? <span className="italic">Within 30 days, unused.</span></li>
-              <li>- Do you offer custom cuts? <span className="italic">Contact us for details.</span></li>
+              <li>- Can I return products? <span className="italic">Within 30 days, unused.</span></li>
+              <li>- Do you offer custom orders? <span className="italic">Contact us for details.</span></li>
             </ul>
           </div>
         </div>

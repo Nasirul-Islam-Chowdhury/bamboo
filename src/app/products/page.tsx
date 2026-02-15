@@ -47,7 +47,7 @@ function ProductCatalog() {
         All Products
       </h1>
       <p className="mt-2 text-bamboo-600">
-        Browse our collection of premium bamboo flute parts
+        Browse our collection of premium bamboo products
       </p>
 
       <div className="mt-8">
@@ -70,7 +70,7 @@ export default function ProductsPage() {
             <div className="h-8 w-48 rounded bg-bamboo-200" />
             <div className="h-4 w-64 rounded bg-bamboo-100" />
             <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
+              {[1, 2].map((i) => (
                 <div key={i} className="h-80 rounded-lg bg-bamboo-100" />
               ))}
             </div>

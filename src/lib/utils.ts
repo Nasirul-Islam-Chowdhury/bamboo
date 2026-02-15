@@ -1,10 +1,7 @@
 import { CartItem } from "@/types";
 
 export function formatPrice(cents: number): string {
-  return new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-  }).format(cents / 100);
+  return "৳" + new Intl.NumberFormat("en-BD").format(cents / 100);
 }
 
 export function generateOrderId(): string {

@@ -23,20 +23,8 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-bamboo-200 bg-white/95 backdrop-blur-sm">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <svg
-            className="h-8 w-8 text-forest-500"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-          >
-            <path d="M4 20 C4 20, 8 12, 8 4 M8 4 C8 4, 12 12, 12 20 M8 8 L6 10 M8 12 L10 14" />
-            <path d="M12 20 C12 20, 16 12, 16 4 M16 4 C16 4, 20 12, 20 20 M16 8 L14 10 M16 12 L18 14" />
-          </svg>
-          <span className="font-serif text-xl font-bold text-bamboo-800">
-            BambooParts
-          </span>
+        <Link href="/" className="font-serif text-2xl font-bold text-bamboo-800">
+          MehruKa✨
         </Link>
 
         {/* Desktop nav */}

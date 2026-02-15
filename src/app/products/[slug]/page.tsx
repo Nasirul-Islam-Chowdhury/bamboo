@@ -11,7 +11,7 @@ export function generateMetadata({ params }: { params: Promise<{ slug: string }>
     const product = products.find((p) => p.slug === slug);
     if (!product) return { title: "Product Not Found" };
     return {
-      title: `${product.name} | BambooParts`,
+      title: `${product.name} | MehruKa✨`,
       description: product.description,
     };
   });

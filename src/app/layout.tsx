@@ -5,9 +5,9 @@ import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BambooParts - Premium Bamboo Flute Parts & Materials",
+  title: "MehruKa✨ - Premium Bamboo Products",
   description:
-    "Craft your own bamboo flute with our premium parts, tubes, mouthpieces, and accessories. Sustainably sourced materials for handmade flutes.",
+    "Handcrafted bamboo bottles and eco-friendly products. Sustainably sourced, beautifully crafted.",
 };
 
 export default function RootLayout({

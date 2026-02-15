@@ -7,13 +7,9 @@ const quickLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
-const categories = [
-  { href: "/products?category=bamboo-tubes", label: "Bamboo Tubes" },
-  { href: "/products?category=mouthpieces", label: "Mouthpieces" },
-  { href: "/products?category=cork-joints", label: "Cork Joints" },
-  { href: "/products?category=tuning-slides", label: "Tuning Slides" },
-  { href: "/products?category=accessories", label: "Accessories" },
-  { href: "/products?category=finishing", label: "Finishing" },
+const productLinks = [
+  { href: "/products/bamboo-thermos", label: "Bamboo Thermos" },
+  { href: "/products/bamboo-decorative-bottle", label: "Carved Bamboo Bottle" },
 ];
 
 export default function Footer() {
@@ -23,9 +19,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <h3 className="font-serif text-lg font-bold text-bamboo-800">BambooParts</h3>
+            <h3 className="font-serif text-lg font-bold text-bamboo-800">MehruKa✨</h3>
             <p className="mt-2 text-sm text-bamboo-600">
-              Premium bamboo parts and materials for handcrafted flutes. Sourced sustainably, crafted with care.
+              Premium handcrafted bamboo products. Sustainably sourced, crafted with care.
             </p>
           </div>
 
@@ -45,13 +41,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Categories */}
+          {/* Products */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-bamboo-800">
-              Categories
+              Products
             </h4>
             <ul className="mt-3 space-y-2">
-              {categories.map((link) => (
+              {productLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="text-sm text-bamboo-600 hover:text-forest-500">
                     {link.label}
@@ -67,15 +63,15 @@ export default function Footer() {
               Get in Touch
             </h4>
             <div className="mt-3 space-y-2 text-sm text-bamboo-600">
-              <p>hello@bambooparts.com</p>
+              <p>hello@mehruka.com</p>
               <p>Mon-Fri, 9am-5pm EST</p>
-              <p>Portland, Oregon</p>
+              <p>Sylhet, Bangladesh</p>
             </div>
           </div>
         </div>
 
         <div className="mt-10 border-t border-bamboo-200 pt-6 text-center text-sm text-bamboo-500">
-          &copy; {new Date().getFullYear()} BambooParts. All rights reserved.
+          &copy; {new Date().getFullYear()} MehruKa✨ All rights reserved.
         </div>
       </div>
     </footer>
