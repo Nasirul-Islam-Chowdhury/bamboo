@@ -38,8 +38,9 @@ function LoginForm() {
     try {
       await signInWithGoogle();
       router.push(redirect);
-    } catch {
-      setError("Google sign-in failed. Please try again.");
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Unknown error";
+      setError(`Google sign-in failed: ${message}`);
     }
   };
 
