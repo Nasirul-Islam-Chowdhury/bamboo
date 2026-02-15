@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bamboo-50: #faf6f1;
+  --color-bamboo-100: #f0e6d3;
+  --color-bamboo-200: #e0cba7;
+  --color-bamboo-300: #c9a96e;
+  --color-bamboo-400: #b5903a;
+  --color-bamboo-500: #96751f;
+  --color-bamboo-600: #7a5e18;
+  --color-bamboo-700: #5e4712;
+  --color-bamboo-800: #42310d;
+  --color-bamboo-900: #2a1f08;
+
+  --color-forest-50: #f0f7ec;
+  --color-forest-100: #d9ebd0;
+  --color-forest-200: #b3d7a1;
+  --color-forest-300: #7dba63;
+  --color-forest-400: #4d9a33;
+  --color-forest-500: #2d5016;
+  --color-forest-600: #1f3a0f;
+  --color-forest-700: #162a0b;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-serif: "Georgia", ui-serif, serif;
+}
+
+body {
+  @apply bg-bamboo-50 text-bamboo-900 antialiased;
+}
+
+::selection {
+  @apply bg-bamboo-300/40;
+}
