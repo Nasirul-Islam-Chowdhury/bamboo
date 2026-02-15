@@ -69,6 +69,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   // Listen for Firebase auth state
   useEffect(() => {
+    if (!auth) {
+      setFirebaseChecked(true);
+      return;
+    }
     const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
       if (firebaseUser) {
         setUser(mapFirebaseUser(firebaseUser));
@@ -86,6 +90,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [manualChecked, firebaseChecked]);
 
   const signInWithGoogle = useCallback(async () => {
+    if (!auth || !googleProvider) {
+      throw new Error("Google sign-in is not available");
+    }
     await signInWithPopup(auth, googleProvider);
   }, []);
 
@@ -151,7 +158,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   );
 
   const signOut = useCallback(async () => {
-    if (user?.authProvider === "firebase") {
+    if (user?.authProvider === "firebase" && auth) {
       await firebaseSignOut(auth);
     }
     // Always clear manual cookie too
